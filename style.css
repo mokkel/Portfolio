@@ -1,16 +1,19 @@
+/* Body settings */
 body {
     background-color: #36393f;
     margin: 0;
     font-family: 'Rubik', sans-serif;
     line-height: 1.5;
-    font-size: 16px;
+    font-size: 16px; 
 }
+
+/* Image settings */
 img {
     width: 100%;
     margin: 0 auto;
     
 }
-
+/* Nav Bar settings */
 li a {
     color: white;
     text-decoration: none;
@@ -21,22 +24,12 @@ li a {
     width: 100%;
     text-align: center;
  }
- 
- li a:hover {
-    background: #3ba55d;
-    border-radius: 7px;
- }
 
  .logo a {
     text-align: left;
     display: block;
     padding: 0;
  }
-
- .logo a:hover {
-     background: transparent;
- }
-
 
  .menu {
      display: flex;
@@ -64,10 +57,34 @@ li a {
     padding: 14px 10px;
  }
 
+/* Header & Footer settings */
  .main {
     box-shadow: 5px 5px 14px 1px rgba(0,0,0,0.44);
  }
   
+ .footerBox {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    text-decoration: none;
+    color: grey;
+}
+
+.footerBox a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+.footerBox {
+    box-shadow: 5px 5px 14px 1px rgba(0,0,0,0.44);
+    margin: auto;
+    width: 100%;
+    
+}
+
+
+/* Landingpage settings */
 
 .Name {
     color: white;
@@ -77,8 +94,9 @@ li a {
 }
 
 .introInfo {
-    width: 800px;
     display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: space-between;
     margin: 50px auto; 
 }
@@ -106,13 +124,6 @@ li a {
     margin: 0; 
 }
 
-.divider {
-    margin: 0 auto;
-    width: 530px;
-    color: #3ba55d;
-    border: 2px solid;
-}
-
 .senesteTitle {
     font-weight: 500;
     font-size: 35px;
@@ -123,23 +134,12 @@ li a {
 .senesteGrid {
     display: grid;
     grid-template-columns: repeat(1,1fr);
-    grid-gap: 30px;
+    grid-gap: 50px;
     justify-items: center;
     align-items: center;
-    max-width: 1140px;
     margin: 0 auto 50px auto;
-}
-
-@media screen and (min-width: 768px) {
-    .senesteGrid {
-        grid-template-columns: repeat(3,1fr);
-        grid-gap: 20px;
-    }
-
-    .column {
-        width: 100%;
-      }
-
+    text-align: center;
+    color: white;
 }
 
 .btn {
@@ -153,6 +153,169 @@ li a {
     background-color: #3ba55d;
 }
 
+/* Divider settings */
+.divider {
+    margin: 0 auto;
+    width: 50%;
+    color: #3ba55d;
+    border: 2px solid;
+}
+
+/* Projects Page Settings */
+.boxSixProjects img {
+   width: 253.33px;
+   height: 253.33px;
+}
+
+.senesteGrid img {
+width: 250px;
+height: 250px
+}
+
+.projekterH1 {
+    color: white;
+    text-align: center;
+    margin-top: 50px;
+    font-size: 55px;
+}
+
+
+/* Skal justeres til mobile */
+/* li a {
+    color: white;
+    text-decoration: none;
+    background: #36393f;
+    padding: 10px 0;
+    display: inline-block;
+    min-width: 115px;
+    width: auto;
+    text-align: center;
+ } */
+
+@media screen and (min-width: 768px) {
+    
+    /* introInfo PC Settings */
+    .introInfo {
+        width: 800px;
+        display: flex;
+        justify-content: space-between;
+        margin: 50px auto; 
+    }
+    
+    /* Divider PC Settings */
+    .divider {
+        margin: 0 auto;
+        width: 530px;
+        color: #3ba55d;
+        border: 2px solid;
+    }
+    
+    
+    /* Landingpage PC settings */
+    .senesteGrid {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 50px;
+    justify-items: center;
+    align-items: center;
+    max-width: 900px;
+    margin: 0 auto 150px auto;
+    text-align: center;
+    color: white;
+    }
+
+    .senesteGrid .boxOneProjects:hover {
+    text-decoration: underline #3ba55d solid 3px;  
+    }
+    .senesteGrid .boxTwoProjects:hover {
+    text-decoration: underline #3ba55d solid 2.5px;
+        
+    }
+    .senesteGrid .boxThreeProjects:hover {
+    text-decoration: underline #3ba55d solid 2.5px;
+        
+    }
+    .senesteGrid .boxFourProjects:hover {
+    text-decoration: underline #3ba55d solid 2.5px;
+        
+    }
+    .senesteGrid .boxFiveProjects:hover {
+    text-decoration: underline #3ba55d solid 2.5px;  
+    }
+    .senesteGrid .boxSixProjects:hover {
+    text-decoration: underline #3ba55d solid 2.5px;   
+    }
+
+    .column {
+    width: 100%;
+    }
+
+/* Navbar & Header settings */
+li a {
+    color: white;
+    text-decoration: none;
+    background: #36393f;
+    padding: 10px 0;
+    display: inline-block;
+    min-width: 115px;
+    width: 100%;
+    text-align: center;
+ }
+ 
+ li a:hover {
+    background: #3ba55d;
+    border-radius: 7px;
+ }
+
+ .logo a {
+    text-align: left;
+    display: block;
+    padding: 0;
+ }
+
+ .logo a:hover {
+    background: transparent;
+     
+ }
+
+ .menu {
+     display: flex;
+     align-items: flex-start;
+     flex-wrap: nowrap;
+     background: none;
+     list-style: none;
+     justify-content: center;
+     margin: 0 auto;
+     max-width: 1200px;
+ }
+
+ .logo {
+    order: 0;
+    flex: 0.8;
+    padding: 10px 0;
+    
+ }
+
+ .item {
+    order: 1;
+    position: relative;
+    display: block;
+    width: auto;
+    padding: 14px 10px;
+ }
+
+.btn {
+    border: 15px solid #3ba55d;
+    border-radius: 7px;
+    color: white;
+    margin: 0 auto;
+    display: block;
+    width: 120px;
+    text-decoration: none;
+    background-color: #3ba55d;
+    
+}
+
 .btn:hover{
     border-radius: 7px;
     transition: 400ms;
@@ -160,7 +323,6 @@ li a {
 
 .return {
     color: white;
-    /* border: 3px solid white; */
     text-decoration: none;
     background: #36393f;
     padding: 10px 0;
@@ -176,11 +338,9 @@ li a {
 
 .footerBox {
     box-shadow: 5px 5px 14px 1px rgba(0,0,0,0.44);
+    margin-bottom: 0;
     
 }
-
-
-
 
 .projekterH1 {
     color: white;
@@ -188,6 +348,10 @@ li a {
     margin-top: 50px;
     font-size: 55px;
 }
+.boxSixProjects img {
+    width: 250px;
+    height: 250px;
+ }
 
 .aboutmeH1 {
     color: white;
@@ -198,21 +362,38 @@ li a {
 
 
 .aboutMe {
+    display: grid;
+    margin: auto;
+    text-align: center;
+}
+
+/* .aboutMe {
     width: 50%;
     height: 400px;
     display: flex;
     justify-content: center;
     justify-content: space-between;
     margin: auto; 
+} */
+
+/* .pfp2 {
+    width: 50%;
+    height: 50%;
+} */
+
+.aboutMeGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
 }
 
-.pfp2 {
-    width: 250px;
-    height: auto;
-    padding: 10px;
+.aboutMeSkills {
+    text-align: center;
+    color: white;
+    letter-spacing: 1px;
+    justify-content: space-evenly;
+    
 }
-
-.aboutmeP {
+.aboutmeText {
     color: white;
     letter-spacing: 1px;
     
@@ -242,39 +423,33 @@ li a {
     margin: auto 60px;
 }
 
-input[type=text], select, textarea {
-    width: 50%;
-    padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-    margin-top: 6px;
-    margin-bottom: 16px;
-    resize: vertical;
-  }
-
-  .container {
+.container {
       display: flex;
       justify-content: space-around;
       margin-top: 100px;
-  }
+}
 
 .contactH1 {
     color: white;
     text-align: center;
+    margin-top: 50px;
 }
 
 .contactInfo {
-    display: flex;
+    text-align: center;
+    margin: 50px auto 100px auto;
 }
 
-
-.contactIcon {
-    width: auto;
-    /* display: flex; */
-    
+.contactInfo h4 {
+    color: white;
+    margin: 5px auto;
 }
 
+.temaH1 {
+    color: white;
+    text-align: center;
+    margin-top: 50px;
+}
 
 .footerText {
     align-self: center;
@@ -283,84 +458,18 @@ input[type=text], select, textarea {
     margin-bottom: 0;
 }
 
-
-
-
-
-
-
-
-
-
-
-
- /*
-
- .container {
-    max-width: 1200px;
+.temaBox  {
+    width: auto;
+    height: 450px;
     display: flex;
-    justify-content: space-around;
-    align-items: center;
- }
- 
- .headerIcon {
-     width: 50px;
-     margin-right: 100px;
- }
- 
- .navItems ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
- }
- 
- .navItems li {
-    flex: 3;    
- } */
+    justify-content: center;
+    align-items: stretch;
+    margin: auto; 
+    padding: 20px;
+}
 
-
-@media (min-width: 800px) {
- 
-    }
-
-
-
-/* li {
-    display: flex;
-    justify-content: ;
-  } */
-
-/* ul {
-    list-style-type: none;
-    display: inline;
-  }  */
-  
-/* a {
-    display: block;
-    padding: 5px;
+.temaTextbox {
     color: white;
-    font-size: 30px; 
-    
-    border-collapse: separate;
-    border-spacing: 15px;
-    text-decoration: none;
-  } */
-
-/* a:hover {
-    color: #3ba55d;
-    border: 3px #b9bbbe solid;
-    border-radius: 10px;
-} */
-
-/* section {
-    max-width: 1400px;
-    margin: 0 auto;
-} */
-
-/* header {
-    background-color: #36393f ;
-    height: 100px;
-    -webkit-box-shadow: 1px 9px 11px -1px rgba(0,0,0,0.85); 
-    box-shadow: 1px 9px 11px -1px rgba(0,0,0,0.85);
-} */
+    letter-spacing: 1px;
+}
+}
