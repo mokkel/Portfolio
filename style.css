@@ -7,6 +7,10 @@ body {
     font-size: 16px; 
 }
 
+p {
+    color: white;
+}
+
 /* Image settings */
 img {
     width: 100%;
@@ -34,12 +38,11 @@ li a {
  .menu {
      display: flex;
      align-items: flex-start;
-     flex-wrap: nowrap;
+     flex-wrap: wrap;
      background: none;
      list-style: none;
      justify-content: center;
      margin: 0 auto;
-     max-width: 1200px;
  }
 
  .logo {
@@ -64,7 +67,8 @@ li a {
   
  .footerBox {
     display: block;
-    margin: 0 auto;
+    margin-bottom: 0;
+    position: absolute;
     text-align: center;
     text-decoration: none;
     color: grey;
@@ -82,7 +86,10 @@ li a {
     width: 100%;
     
 }
-
+.opgaveH3 {
+    color: white;
+    text-align: center;
+}
 
 /* Landingpage settings */
 
@@ -147,10 +154,12 @@ li a {
     border-radius: 7px;
     color: white;
     margin: 0 auto;
+    margin-bottom: 20px;
     display: block;
     width: 120px;
     text-decoration: none;
     background-color: #3ba55d;
+    
 }
 
 /* Divider settings */
@@ -179,18 +188,64 @@ height: 250px
     font-size: 55px;
 }
 
-
-/* Skal justeres til mobile */
-/* li a {
+.aboutmeH1 {
     color: white;
-    text-decoration: none;
-    background: #36393f;
-    padding: 10px 0;
-    display: inline-block;
-    min-width: 115px;
-    width: auto;
     text-align: center;
- } */
+    margin-top: 50px;
+    font-size: 55px;
+}
+
+
+.aboutMe {
+    display: grid;
+    margin: auto;
+    text-align: center;
+}
+
+.aboutmeText {
+    color: white;
+    letter-spacing: 1px;    
+}
+
+.aboutMeGrid {
+    display: grid;
+    grid-template-columns: auto;
+    max-width: 767px;
+    justify-content: center;
+    padding: 50px;
+}
+
+.aboutMeSkills {
+    text-align: center;
+    color: white;
+    letter-spacing: 1px
+}
+
+.kompetencerH2 {
+    color: white;
+    text-align: center;
+    font-size: 55px;
+}
+
+#section_contact {
+    display: grid;
+    grid-template-rows: 1fr;
+    color: white;
+    justify-content: center;
+    justify-items: center;
+}
+
+
+.temaH1 {
+    color: white;
+    text-align: center;
+   
+}
+
+
+
+ 
+
 
 @media screen and (min-width: 768px) {
     
@@ -221,7 +276,7 @@ height: 250px
     max-width: 900px;
     margin: 0 auto 150px auto;
     text-align: center;
-    color: white;
+    color: whitesmoke;
     }
 
     .senesteGrid .boxOneProjects:hover {
@@ -309,6 +364,7 @@ li a {
     border-radius: 7px;
     color: white;
     margin: 0 auto;
+    margin-bottom: 50px;
     display: block;
     width: 120px;
     text-decoration: none;
@@ -336,11 +392,6 @@ li a {
     background: #3ba55d;
 }
 
-.footerBox {
-    box-shadow: 5px 5px 14px 1px rgba(0,0,0,0.44);
-    margin-bottom: 0;
-    
-}
 
 .projekterH1 {
     color: white;
@@ -348,6 +399,7 @@ li a {
     margin-top: 50px;
     font-size: 55px;
 }
+
 .boxSixProjects img {
     width: 250px;
     height: 250px;
@@ -363,40 +415,32 @@ li a {
 
 .aboutMe {
     display: grid;
+    align-items: center;
     margin: auto;
     text-align: center;
 }
 
-/* .aboutMe {
-    width: 50%;
-    height: 400px;
-    display: flex;
-    justify-content: center;
-    justify-content: space-between;
-    margin: auto; 
-} */
 
-/* .pfp2 {
-    width: 50%;
-    height: 50%;
-} */
 
 .aboutMeGrid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    max-width: 1200px;
+    margin: auto;
+    
 }
 
 .aboutMeSkills {
     text-align: center;
     color: white;
     letter-spacing: 1px;
-    justify-content: space-evenly;
+    justify-content: center
     
 }
+
 .aboutmeText {
     color: white;
-    letter-spacing: 1px;
-    
+    letter-spacing: 1px;    
 }
 
 .kompetencerH2 {
@@ -404,29 +448,7 @@ li a {
     text-align: center;
     margin-top: 50px;
     font-size: 55px;
-}
-
-.row {
-    display: flex;
-    
-}
-
-.column {
-    float: left;
-    width: 33.33%;
-
-}
-
-.column  {
-    color: white;
-    text-align: center;
-    margin: auto 60px;
-}
-
-.container {
-      display: flex;
-      justify-content: space-around;
-      margin-top: 100px;
+    margin-bottom: 0;
 }
 
 .contactH1 {
@@ -451,12 +473,7 @@ li a {
     margin-top: 50px;
 }
 
-.footerText {
-    align-self: center;
-    text-align: center;
-    text-decoration: none;
-    margin-bottom: 0;
-}
+
 
 .temaBox  {
     width: auto;
@@ -465,11 +482,51 @@ li a {
     justify-content: center;
     align-items: stretch;
     margin: auto; 
-    padding: 20px;
+    padding-bottom: 100px;
+    padding: 30px;
 }
 
 .temaTextbox {
     color: white;
     letter-spacing: 1px;
+    
+}
+
+.opgaveH3 {
+    color: white;
+    text-align: center;
+}
+
+#theme1 {
+    padding-bottom: 30px;
+}
+
+#opgave {
+    max-width: 1000px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    padding-top: 100px;
+    margin: 0 auto;
+    grid-gap: 200px;
+    text-align: start;
+
+}
+
+#opgave .btn {
+    justify-content: center;
+    text-align: center;
+}
+
+
+.footerBox {
+    box-shadow: 5px 5px 14px 1px rgba(0,0,0,0.44);
+    margin-bottom: 0;   
+}
+
+.footerText {
+    align-self: center;
+    text-align: center;
+    text-decoration: none;
+    margin-bottom: 0;
 }
 }
